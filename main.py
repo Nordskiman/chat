@@ -2,14 +2,10 @@ import openai
 from settings import API_OPENAI_KEY
 
 
-openai.api_key = API_OPENAI_KEY
-
-
 def main():
+    openai.api_key = API_OPENAI_KEY
     model_engine = "text-davinci-003"
-    prompt = "Напиши генератор случайных чисел на Python"
-
-    max_tokens = 128
+    prompt = "Придумай 5 красочных поздравлений с днем рождения"
 
     completion = openai.Completion.create(
         engine=model_engine,
