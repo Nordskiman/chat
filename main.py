@@ -1,5 +1,5 @@
 import openai
-from settings import API_OPENAI_KEY
+from config import API_OPENAI_KEY
 
 
 def main():
